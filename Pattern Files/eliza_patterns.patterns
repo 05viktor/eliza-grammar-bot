@@ -1,0 +1,32 @@
+[Patterns]
+I am * => STATE_RESPONSE => FEELING
+I feel * => STATE_RESPONSE => FEELING
+I need * => NEED_RESPONSE => NEED
+I want * => WANT_RESPONSE => DESIRE
+my * => FAMILY_RESPONSE => FAMILY
+because * => REASON_RESPONSE => REASON
+* => GENERAL_RESPONSE
+End
+
+[Reflections]
+am => are
+was => were
+i => you
+I'd => you would
+I'd => you would
+I've => you have
+I'll => you will
+my => your
+you've => I have
+you'll => I will
+your => my
+yours => mine
+you => me
+me => you
+End
+
+[Quit Words]
+bye
+quit
+exit
+End

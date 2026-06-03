@@ -1,0 +1,87 @@
+[Nonterminals]
+S
+STATE_RESPONSE
+NEED_RESPONSE
+WANT_RESPONSE
+FAMILY_RESPONSE
+REASON_RESPONSE
+GENERAL_RESPONSE
+End
+
+[Terminals]
+Why
+do
+you
+feel
+feeling
+How
+long
+have
+felt
+What
+makes
+you
+need
+Would
+would
+it
+mean
+really
+help
+to
+have
+Tell
+me
+more
+about
+your
+When
+did
+this
+start
+Can
+you
+explain
+that
+further
+Do
+you
+often
+think
+about
+want
+why
+say
+?
+.
+End
+
+[Variables]
+FEELING
+NEED
+DESIRE
+FAMILY
+REASON
+End
+
+[Rules]
+S -> GENERAL_RESPONSE
+STATE_RESPONSE -> Why do you feel FEELING ?
+STATE_RESPONSE -> How long have you felt FEELING ?
+STATE_RESPONSE -> When did you start feeling FEELING ?
+NEED_RESPONSE -> What makes you need NEED ?
+NEED_RESPONSE -> Would it really help to have NEED ?
+WANT_RESPONSE -> Why do you want DESIRE ?
+WANT_RESPONSE -> What would it mean to have DESIRE ?
+FAMILY_RESPONSE -> Tell me more about your FAMILY .
+FAMILY_RESPONSE -> Do you often think about your FAMILY ?
+REASON_RESPONSE -> Can you explain why REASON ?
+REASON_RESPONSE -> Tell me more about why REASON .
+GENERAL_RESPONSE -> Tell me more .
+GENERAL_RESPONSE -> Can you explain that further ?
+GENERAL_RESPONSE -> Why do you say that ?
+End
+
+[Start]
+S
+End
